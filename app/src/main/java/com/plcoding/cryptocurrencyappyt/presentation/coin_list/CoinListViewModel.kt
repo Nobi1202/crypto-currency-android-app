@@ -37,6 +37,7 @@ class CoinListViewModel @Inject constructor(
                 is Resource.Loading -> {
                     _state.value = CoinListState(isLoading = true)
                 }
+                else -> {}
             }
         }.launchIn(viewModelScope)
     }
